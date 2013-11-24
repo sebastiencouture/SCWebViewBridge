@@ -13,7 +13,7 @@ SCWebViewBridge.call( "methodSimple" );
 
 SCWebViewBridge.call( 
     "methodComplex:array:", 
-    new Date(), [ "Stuff, youâ€™ll need to blah blah Person detail view & engagement[ ],", 4.2 ]  );
+    new Date(), [ "Stuff, youâ€™ll need to blah blah… view & engagement[ ],", 4.2, true ]  );
 ```
 
 Register for calls from Javascript
