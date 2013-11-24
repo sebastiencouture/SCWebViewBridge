@@ -1,7 +1,7 @@
 SCWebViewBridge
 ===============
 
-SCWebViewBridge helps make Javascript calls to Objective-C and Objective-C calls to Javascript easier. Supports passing primitive types. iOS 5 and above supported.
+SCWebViewBridge helps make Javascript calls to Objective-C and Objective-C calls to Javascript easier. Supports passing primitive types as arguments. iOS 5 and above supported.
 
 
 ## Example Usage
@@ -39,17 +39,17 @@ self.webViewBridge = [[SCWebViewBridge alloc] initWithWebView:self.webView];
 ```
 
 
-## Supported Primitive Types
+## Supported Argument Primitive Types
 
 Javascript         | Objective-C
 -------------------|-------------
-Number             | [`NSNumber`][NSNumber]
-String             | [`NSString`][NSString]
-Date               | [`NSDate`][NSDate]
-`null`             | [`NSNull`][NSNull]
-`true` and `false` | [`NSNumber`][NSNumber]
-Array              | [`NSArray`][NSArray]
-Object             | [`NSDictionary`][NSDictionary]
+Number             | `NSNumber`
+String             | `NSString`
+Date               | `NSDate`
+`null`             | `NSNull`
+`true` and `false` | `NSNumber`
+Array              | `NSArray`
+Object             | `NSDictionary`
 
 
 ## How to Use
