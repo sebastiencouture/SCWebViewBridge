@@ -6,12 +6,14 @@ SCWebViewBridge helps make Javascript calls to Objective-C and Objective-C calls
 
 ## Example Usage
 
-* Calling Objective-C from Javascript
+# Calling Objective-C from Javascript
 
 ``` javascript
 SCWebViewBridge.call( "methodSimple" );
 
-SCWebViewBridge.call( "methodComplex:array:", new Date(), [ "Stuff, youâ€™ll need to blah blah Person detail view & engagement[ ],", 4.2 ]  );
+SCWebViewBridge.call( 
+    "methodComplex:array:", 
+    new Date(), [ "Stuff, youâ€™ll need to blah blah Person detail view & engagement[ ],", 4.2 ]  );
 ```
 
 Register for calls from Javascript
@@ -20,7 +22,7 @@ Register for calls from Javascript
 [self.webViewBridge registerForCalls:self];
 ```
 
-* Calling Javascript from Objective-C
+# Calling Javascript from Objective-C
 
 ``` objective-c
 [self.webViewBridge call:@"testSimple" arguments:nil];
@@ -28,7 +30,7 @@ Register for calls from Javascript
 [self.webViewBridge call:@"NamespaceTest.testComplex" arguments:[NSDate date], @"TEST", nil];
 ```
 
-* Load local HTML file
+# Load local HTML file
 
 ``` objective-c
 self.webViewBridge = [[SCWebViewBridge alloc] initWithWebView:self.webView];
@@ -54,6 +56,8 @@ Object             | [`NSDictionary`][NSDictionary]
 
 1. Copy SCWebViewBridge folder into your project
 2. Include SCWebViewBridge.js in HTML/JS
+3. See SCWebViewBridgeDemo/sample.html for example of calling Objective-C from Javascript
+4. See SCWebViewBridgeDemo/ViewController for example of initializing SCWebViewBrdige and calling Javascript from Objective-C
 
 
 ## License
